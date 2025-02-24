@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .food{
+            border: 1px solid green;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .food img{
+            width: 100%;
+        }
+
+        .container{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap:20px ;
+        }
+
+        @media screen and (max-width: 576px){
+            .container{
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+
+        /* smaller device */
+        @media screen and (max-width:576px){
+            .container{
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .food{
+                background-color: aqua;
+            }
+        }
+
+        /* medium device */
+      @media screen and (min-width: 576px) and (max-width:992px){
+        .container{
+            grid-template-columns: repeat(2, 1fr);
+        }
+      }
+         
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="food">
+            <img src="image/healthy.webp" alt="">
+            <h3>Food-Item- 1</h3>
+            <p>price:1100</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti tempora minus illum necessitatibus aut? Vero, aliquam quia. Harum, non iure.</p>
+        </div>
+
+        <div class="food">
+            <img src="image/healthy.webp" alt="">
+            <h3>Food-Item- 1</h3>
+            <p>price:1100</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti tempora minus illum necessitatibus aut? Vero, aliquam quia. Harum, non iure.</p>
+        </div>
+
+        <div class="food">
+            <img src="image/healthy.webp" alt="">
+            <h3>Food-Item- 1</h3>
+            <p>price:1100</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti tempora minus illum necessitatibus aut? Vero, aliquam quia. Harum, non iure.</p>
+        </div>
+        <div class="food">
+            <img src="image/healthy.webp" alt="">
+            <h3>Food-Item- 1</h3>
+            <p>price:1100</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti tempora minus illum necessitatibus aut? Vero, aliquam quia. Harum, non iure.</p>
+        </div>
+        <div class="food">
+            <img src="image/healthy.webp" alt="">
+            <h3>Food-Item- 1</h3>
+            <p>price:1100</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti tempora minus illum necessitatibus aut? Vero, aliquam quia. Harum, non iure.</p>
+        </div>
+        <div class="food">
+            <img src="image/healthy.webp" alt="">
+            <h3>Food-Item- 1</h3>
+            <p>price:1100</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti tempora minus illum necessitatibus aut? Vero, aliquam quia. Harum, non iure.</p>
+        </div>
+    </div>
+
+    <section>
+
+    </section>
+</body>
+</html>

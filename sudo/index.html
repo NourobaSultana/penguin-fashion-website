@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h3:hover{
+            color: tomato;
+            background-color: skyblue;
+        }
+
+        input:focus{
+            color: blue;
+        }
+        a:visited{
+            color: blueviolet;
+        }
+
+        li:last-child{
+            color: brown;
+        }
+
+        li:nth-child(2n){
+            color: purple;
+        }
+        li:nth-child(2n+1){
+            color: rgb(91, 73, 108);
+        }
+        li:nth-child(3n+1){
+            color: aquamarine;
+        }
+
+        .box{
+            border: 5px dotted purple;
+            width: 200px;
+        }
+        .swim-container{
+              position: relative;
+              border: 2px solid purple;
+        }
+     /* relative nijerjayga chare na */
+        .ring{
+            position: relative; 
+            left: 50px;
+            top: -30px;
+
+        }
+
+        .ring{
+            position: absolute;
+            top: 40px;
+            left: 100px;
+        }
+        .ring{
+            position: sticky;
+            top: 0px;
+        }
+        .ring{
+            position: fixed;
+            top: 200px;
+            left: 50px;
+        }
+
+        .box{
+            position: relative;
+        }
+         .boy2{
+            z-index: 10;
+         }
+        .ring2{
+            top: -50px;
+            z-index: 5;
+        }
+        .water2{
+            top: -150px;
+        }
+    </style>
+</head>
+<body>
+    <h3>My heading</h3>
+    <input type="text">
+    <input type="text">
+    <a href="">Google</a>
+
+    <ul>
+        <li>jalaiya</li>
+        <li>palaiya</li>
+        <li>Malaiya</li>
+        <li>sunaiya</li>
+        <li>bulaiya</li>
+        <li>miskin</li>
+        <li>fokir</li>
+    </ul>
+
+    <ol>
+        <!-- flow related -->
+        <li>Static</li>
+        <li>Relative- will not leave the current spot, and relative theke koto tuku jabe dure seta bujhay</li>
+        <li>Absolute- in comparison will loose its own position and will move based on the root.</li>
+        <!-- scroll related -->
+        <li>Fixed</li>
+        <li>Sticky</li>
+    </ol>
+
+    <div class="swim-container">
+      <div class="box boy"><img src="./image/Ellipse 1.png" alt="" width="200"></div>
+      <div class="box ring"><img src="./image/Group 75.png" alt="" width="200"></div>
+      <div class="box water"><img src="./image/Rectangle 3.png" alt="" width="200"></div>
+    </div>
+
+    <div class="swim-container">
+        <div class="box boy"><img src="./image/Ellipse 1.png" alt="" width="200"></div>
+        <div class="box ring"><img src="./image/Group 75.png" alt="" width="200"></div>
+        <div class="box water"><img src="./image/Rectangle 3.png" alt="" width="200"></div>
+      </div>
+
+      <div class="swim-container">
+        <div class="box boy"><img src="./image/Ellipse 1.png" alt="" width="200"></div>
+        <div class="box ring"><img src="./image/Group 75.png" alt="" width="200"></div>
+        <div class="box water"><img src="./image/Rectangle 3.png" alt="" width="200"></div>
+      </div>
+
+      <div class="swim-container">
+        <div class="box boy"><img src="./image/Ellipse 1.png" alt="" width="200"></div>
+        <div class="box ring"><img src="./image/Group 75.png" alt="" width="200"></div>
+        <div class="box water"><img src="./image/Rectangle 3.png" alt="" width="200"></div>
+      </div>
+
+      <div class="swim-container">
+        <div class="box boy"><img src="./image/Ellipse 1.png" alt="" width="200"></div>
+        <div class="box ring"><img src="./image/Group 75.png" alt="" width="200"></div>
+        <div class="box water"><img src="./image/Rectangle 3.png" alt="" width="200"></div>
+      </div>
+
+      <h3>z-index</h3>
+      <div class="swim2-container">
+        <div class="box boy2"><img src="./image/Ellipse 1.png" alt="" width="200"></div>
+        <div class="box ring2"><img src="./image/Group 75.png" alt="" width="200"></div>
+        <div class="box water2"><img src="./image/Rectangle 3.png" alt="" width="200"></div>
+      </div>
+</body>
+</html>
